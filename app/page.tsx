@@ -23,6 +23,7 @@ export default function Home() {
   </h2>
 
   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    {/*Aqui se cargan los pruductos*/}
 
     {/* PRODUCTO 1 */}
     <div className="bg-zinc-900 rounded-2xl p-6">
@@ -98,6 +99,78 @@ export default function Home() {
         Comprar
       </button>
     </div>
+    {/* PRODUCTO 4 */}
+<div className="bg-zinc-900 rounded-2xl p-6">
+  <img
+    src="/products/4.jpeg"
+    alt="Super Organic"
+    className="h-[580px] w-full object-contain rounded-xl mb-4 bg-zinc-900 p-2"
+  />
+
+  <h3 className="text-2xl font-semibold mb-2">
+    Super Organic
+  </h3>
+
+  <p className="text-gray-400 mb-4">
+    Ambientador de alta intensidad. Colócalo bajo el asiento o en cualquier espacio para disfrutar de un aroma fresco y duradero.
+  </p>
+
+  <p className="text-2xl font-bold mb-4">
+    $80 MXN
+  </p>
+
+  <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
+    Comprar
+  </button>
+</div>
+{/* PRODUCTO 5 */}
+<div className="bg-zinc-900 rounded-2xl p-6">
+  <img
+    src="/products/4.jpeg"
+    alt="Spray PLATINUM"
+    className="h-[580px] w-full object-contain rounded-xl mb-4 bg-zinc-900 p-2"
+  />
+
+  <h3 className="text-2xl font-semibold mb-2">
+    Spray PLATINUM
+  </h3>
+
+  <p className="text-gray-400 mb-4">
+    Aroma premium de alta intensidad para espacios cerrados.
+  </p>
+
+  <p className="text-2xl font-bold mb-4">
+    $95 MXN
+  </p>
+
+  <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
+    Comprar
+  </button>
+</div>
+{/* PRODUCTO 6 */}
+<div className="bg-zinc-900 rounded-2xl p-6">
+  <img
+    src="/products/4.jpeg"
+    alt="SANYWHERE"
+    className="h-[580px] w-full object-contain rounded-xl mb-4 bg-zinc-900 p-2"
+  />
+
+  <h3 className="text-2xl font-semibold mb-2">
+    SANYWHERE
+  </h3>
+
+  <p className="text-gray-400 mb-4">
+    Aroma premium de alta intensidad para espacios cerrados.
+  </p>
+
+  <p className="text-2xl font-bold mb-4">
+    $130 MXN
+  </p>
+
+  <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
+    Comprar
+  </button>
+</div>
 
   </div>
 </section>
