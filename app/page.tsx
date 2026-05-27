@@ -38,16 +38,18 @@ export default function Home() {
       </h3>
 
       <p className="text-gray-400 mb-4">
-        Controla la intensidad del aroma con regulador integrado.
+        Controla la intensidad del aroma con el regulador integrado en la tapa, desde una fragancia suave hasta más intensa.
       </p>
 
       <p className="text-2xl font-bold mb-4">
         $80 MXN
       </p>
 
-      <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
-        Comprar
-      </button>
+      <a href="/product/1">
+  <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
+    Comprar
+  </button>
+</a>
     </div>
 
     {/* PRODUCTO 2 */}
@@ -63,7 +65,7 @@ export default function Home() {
       </h3>
 
       <p className="text-gray-400 mb-4">
-        Fragancia intensa y envolvente.
+        Fragancia intensa y envolvente con almohadillas aromáticas y diseño abierto sin regulador de aroma.
       </p>
 
       <p className="text-2xl font-bold mb-4">
@@ -88,7 +90,7 @@ export default function Home() {
       </h3>
 
       <p className="text-gray-400 mb-4">
-        Ambientador para auto con fragancia continua.
+       Ambientador para auto. Colócalo en las rejillas de ventilación para disfrutar de una fragancia fresca y continua.
       </p>
 
       <p className="text-2xl font-bold mb-4">
@@ -136,7 +138,7 @@ export default function Home() {
   </h3>
 
   <p className="text-gray-400 mb-4">
-    Aroma premium de alta intensidad para espacios cerrados.
+    Spray concentrado a base de aceite. Elimina malos olores y refresca al instante. Con pocas pulverizaciones, el aroma dura todo el día. También puede aplicarse en Organic Can y Super Organic para prolongar su fragancia. Ideal para usar en algodón y colocarlo en cualquier espacio.
   </p>
 
   <p className="text-2xl font-bold mb-4">
@@ -160,7 +162,7 @@ export default function Home() {
   </h3>
 
   <p className="text-gray-400 mb-4">
-    Aroma premium de alta intensidad para espacios cerrados.
+    Elimina olores y refresca cualquier espacio con la tecnología PARA+ de eliminación de olores.
   </p>
 
   <p className="text-2xl font-bold mb-4">
