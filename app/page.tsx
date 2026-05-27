@@ -142,11 +142,6 @@ export default function Home() {
     Comprar
   </button>
 </div>
-
-
-
-
-
 <div className="bg-zinc-900 rounded-2xl p-6">
   <img
     src="/products/6.jpeg"
@@ -170,21 +165,7 @@ export default function Home() {
     Comprar
   </button>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
+  </div>
       </section>
     </main>
   );
