@@ -26,20 +26,20 @@ export default function Home() {
           <div className="bg-zinc-900 rounded-2xl p-6">
             <img
   src="/products/1.jpeg"
-  alt="Black Ice"
-  className="h-56 w-full object-cover rounded-xl mb-4"
+  alt="Organic Can Con tapa"
+  className="h-[580px] w-full object-contain rounded-xl mb-4 bg-zinc-900 p-2"
 />
 
             <h3 className="text-2xl font-semibold mb-2">
-              Black Ice
+              Organic Can Con tapa
             </h3>
 
             <p className="text-gray-400 mb-4">
-              Aroma elegante y fresco.
+              Controla la intensidad del aroma con el regulador integrado en la tapa, desde una fragancia suave hasta más intensa.
             </p>
 
             <p className="text-2xl font-bold mb-4">
-              $199 MXN
+              $80,00 MXN
             </p>
 
             <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
@@ -50,20 +50,20 @@ export default function Home() {
           <div className="bg-zinc-900 rounded-2xl p-6">
             <img
   src="/products/2.jpeg"
-  alt="Ocean Breeze"
-  className="h-56 w-full object-cover rounded-xl mb-4"
+  alt="Organic Can sin tapa"
+  className="h-[580px] w-full object-contain rounded-xl mb-4 bg-zinc-900 p-2"
 />
 
             <h3 className="text-2xl font-semibold mb-2">
-              Ocean Breeze
+              Organic Can sin tapa
             </h3>
 
             <p className="text-gray-400 mb-4">
-              Aroma limpio y relajante.
+              Fragancia intensa y envolvente con almohadillas aromáticas y diseño abierto sin regulador de aroma.
             </p>
 
             <p className="text-2xl font-bold mb-4">
-              $249 MXN
+              $75 MXN
             </p>
 
             <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
@@ -74,20 +74,20 @@ export default function Home() {
           <div className="bg-zinc-900 rounded-2xl p-6">
             <img
   src="/products/3.jpeg"
-  alt="Luxury Wood"
-  className="h-56 w-full object-cover rounded-xl mb-4"
+  alt="LITTLE"
+  className="h-[580px] w-full object-contain rounded-xl mb-4 bg-zinc-900 p-2"
 />
 
             <h3 className="text-2xl font-semibold mb-2">
-              Luxury Wood
+              LITTLE
             </h3>
 
             <p className="text-gray-400 mb-4">
-              Fragancia intensa y premium.
+              Ambientador para auto. Colócalo en las rejillas de ventilación para disfrutar de una fragancia fresca y continua.
             </p>
 
             <p className="text-2xl font-bold mb-4">
-              $299 MXN
+              $$100 MXN
             </p>
 
             <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
