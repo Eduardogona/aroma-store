@@ -24,7 +24,11 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-zinc-900 rounded-2xl p-6">
-            <div className="h-56 bg-zinc-800 rounded-xl mb-4"></div>
+            <img
+  src="/products/1.jpeg"
+  alt="Black Ice"
+  className="h-56 w-full object-cover rounded-xl mb-4"
+/>
 
             <h3 className="text-2xl font-semibold mb-2">
               Black Ice
@@ -44,7 +48,11 @@ export default function Home() {
           </div>
 
           <div className="bg-zinc-900 rounded-2xl p-6">
-            <div className="h-56 bg-zinc-800 rounded-xl mb-4"></div>
+            <img
+  src="/products/2.jpeg"
+  alt="Ocean Breeze"
+  className="h-56 w-full object-cover rounded-xl mb-4"
+/>
 
             <h3 className="text-2xl font-semibold mb-2">
               Ocean Breeze
@@ -64,7 +72,11 @@ export default function Home() {
           </div>
 
           <div className="bg-zinc-900 rounded-2xl p-6">
-            <div className="h-56 bg-zinc-800 rounded-xl mb-4"></div>
+            <img
+  src="/products/3.jpeg"
+  alt="Luxury Wood"
+  className="h-56 w-full object-cover rounded-xl mb-4"
+/>
 
             <h3 className="text-2xl font-semibold mb-2">
               Luxury Wood
