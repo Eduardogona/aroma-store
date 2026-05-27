@@ -19,83 +19,88 @@ export default function Home() {
       {/* PRODUCTOS */}
       <section className="px-8 pb-20">
         <h2 className="text-3xl font-bold mb-10 text-center">
-          Productos Destacados
-        </h2>
+    Productos Destacados
+  </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-zinc-900 rounded-2xl p-6">
-            <img
-  src="/products/1.jpeg"
-  alt="Organic Can Con tapa"
-  className="h-[580px] w-full object-contain rounded-xl mb-4 bg-zinc-900 p-2"
-/>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-            <h3 className="text-2xl font-semibold mb-2">
-              Organic Can Con tapa
-            </h3>
+    {/* PRODUCTO 1 */}
+    <div className="bg-zinc-900 rounded-2xl p-6">
+      <img
+        src="/products/1.jpeg"
+        alt="Organic Can Con tapa"
+        className="h-[580px] w-full object-contain rounded-xl mb-4 bg-zinc-900 p-2"
+      />
 
-            <p className="text-gray-400 mb-4">
-              Controla la intensidad del aroma con el regulador integrado en la tapa, desde una fragancia suave hasta más intensa.
-            </p>
+      <h3 className="text-2xl font-semibold mb-2">
+        Organic Can Con tapa
+      </h3>
 
-            <p className="text-2xl font-bold mb-4">
-              $80,00 MXN
-            </p>
+      <p className="text-gray-400 mb-4">
+        Controla la intensidad del aroma con regulador integrado.
+      </p>
 
-            <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
-              Comprar
-            </button>
-          </div>
+      <p className="text-2xl font-bold mb-4">
+        $80 MXN
+      </p>
 
-          <div className="bg-zinc-900 rounded-2xl p-6">
-            <img
-  src="/products/2.jpeg"
-  alt="Organic Can sin tapa"
-  className="h-[580px] w-full object-contain rounded-xl mb-4 bg-zinc-900 p-2"
-/>
+      <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
+        Comprar
+      </button>
+    </div>
 
-            <h3 className="text-2xl font-semibold mb-2">
-              Organic Can sin tapa
-            </h3>
+    {/* PRODUCTO 2 */}
+    <div className="bg-zinc-900 rounded-2xl p-6">
+      <img
+        src="/products/2.jpeg"
+        alt="Organic Can sin tapa"
+        className="h-[580px] w-full object-contain rounded-xl mb-4 bg-zinc-900 p-2"
+      />
 
-            <p className="text-gray-400 mb-4">
-              Fragancia intensa y envolvente con almohadillas aromáticas y diseño abierto sin regulador de aroma.
-            </p>
+      <h3 className="text-2xl font-semibold mb-2">
+        Organic Can sin tapa
+      </h3>
 
-            <p className="text-2xl font-bold mb-4">
-              $75 MXN
-            </p>
+      <p className="text-gray-400 mb-4">
+        Fragancia intensa y envolvente.
+      </p>
 
-            <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
-              Comprar
-            </button>
-          </div>
+      <p className="text-2xl font-bold mb-4">
+        $75 MXN
+      </p>
 
-          <div className="bg-zinc-900 rounded-2xl p-6">
-            <img
-  src="/products/3.jpeg"
-  alt="LITTLE"
-  className="h-[580px] w-full object-contain rounded-xl mb-4 bg-zinc-900 p-2"
-/>
+      <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
+        Comprar
+      </button>
+    </div>
 
-            <h3 className="text-2xl font-semibold mb-2">
-              LITTLE
-            </h3>
+    {/* PRODUCTO 3 */}
+    <div className="bg-zinc-900 rounded-2xl p-6">
+      <img
+        src="/products/3.jpeg"
+        alt="LITTLE"
+        className="h-[580px] w-full object-contain rounded-xl mb-4 bg-zinc-900 p-2"
+      />
 
-            <p className="text-gray-400 mb-4">
-              Ambientador para auto. Colócalo en las rejillas de ventilación para disfrutar de una fragancia fresca y continua.
-            </p>
+      <h3 className="text-2xl font-semibold mb-2">
+        LITTLE
+      </h3>
 
-            <p className="text-2xl font-bold mb-4">
-              $$100 MXN
-            </p>
+      <p className="text-gray-400 mb-4">
+        Ambientador para auto con fragancia continua.
+      </p>
 
-            <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
-              Comprar
-            </button>
-          </div>
+      <p className="text-2xl font-bold mb-4">
+        $100 MXN
+      </p>
+
+      <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
+        Comprar
+      </button>
+    </div>
+
   </div>
-      </section>
+</section>
     </main>
   );
 }
