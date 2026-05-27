@@ -32,7 +32,7 @@ export default function ProductPage() {
     <main className="min-h-screen bg-black text-white p-4 flex justify-start">
       <div className="max-w-xs space-y-3">
 
-        <h1 className="text-3xl font-bold">
+        <h1 className="text-4xl font-bold">
           Aromas Premium
         </h1>
 
@@ -42,30 +42,30 @@ export default function ProductPage() {
             className="bg-gray-900 border border-gray-800 rounded-md p-2 space-y-1"
           >
             <div className="flex justify-between">
-              <span className="text-sm font-semibold">{p.name}</span>
-              <span className="text-green-400 text-xs">
+              <span className="text-base font-semibold">{p.name}</span>
+              <span className="text-green-400 text-sm">
                 Stock: {p.stock}
               </span>
             </div>
 
             <div className="flex justify-between items-center">
-              <span className="text-gray-400 text-xs">Cantidad</span>
+              <span className="text-sm text-gray-400">Cantidad</span>
 
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => changeQty(p.name, -1, p.stock, p.qty)}
-                  className="w-6 h-6 bg-gray-800 rounded"
+                  className="w-7 h-7 bg-gray-800 rounded"
                 >
                   -
                 </button>
 
-                <span className="w-4 text-center text-xs">
+                <span className="w-6 text-center text-sm">
                   {p.qty > 0 ? p.qty : ""}
                 </span>
 
                 <button
                   onClick={() => changeQty(p.name, 1, p.stock, p.qty)}
-                  className="w-6 h-6 bg-gray-800 rounded"
+                  className="w-7 h-7 bg-gray-800 rounded"
                 >
                   +
                 </button>
@@ -74,9 +74,11 @@ export default function ProductPage() {
           </div>
         ))}
 
-        <div className="bg-gray-900 border border-gray-800 p-2 rounded-md">
-          <div className="text-gray-400 text-xs">Total</div>
-          <div className="text-green-400 font-bold">{totalItems}</div>
+        <div className="bg-gray-900 border border-gray-800 p-3 rounded-md">
+          <div className="text-gray-400 text-sm">Total seleccionado</div>
+          <div className="text-green-400 font-bold text-lg">
+            {totalItems}
+          </div>
         </div>
 
       </div>
