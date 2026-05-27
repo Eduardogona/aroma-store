@@ -52,30 +52,32 @@ export default function Home() {
 </a>
     </div>
 
-    {/* PRODUCTO 2 */}
-    <div className="bg-zinc-900 rounded-2xl p-6">
-      <img
-        src="/products/2.jpeg"
-        alt="Organic Can sin tapa"
-        className="h-[580px] w-full object-contain rounded-xl mb-4 bg-zinc-900 p-2"
-      />
+{/* PRODUCTO 2 */}
+<div className="bg-zinc-900 rounded-2xl p-6">
+  <img
+    src="/products/2.jpeg"
+    alt="Organic Can sin tapa"
+    className="h-[580px] w-full object-contain rounded-xl mb-4 bg-zinc-900 p-2"
+  />
 
-      <h3 className="text-2xl font-semibold mb-2">
-        Organic Can sin tapa
-      </h3>
+  <h3 className="text-2xl font-semibold mb-2">
+    Organic Can sin tapa
+  </h3>
 
-      <p className="text-gray-400 mb-4">
-        Fragancia intensa y envolvente con almohadillas aromáticas y diseño abierto sin regulador de aroma.
-      </p>
+  <p className="text-gray-400 mb-4">
+    Fragancia intensa y envolvente con almohadillas aromáticas y diseño abierto sin regulador de aroma.
+  </p>
 
-      <p className="text-2xl font-bold mb-4">
-        $75 MXN
-      </p>
+  <p className="text-2xl font-bold mb-4">
+    $75 MXN
+  </p>
 
-      <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
-        Comprar
-      </button>
-    </div>
+  <a href="/product/organic-can-sin-tapa">
+    <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
+      Comprar
+    </button>
+  </a>
+</div>
 
     {/* PRODUCTO 3 */}
     <div className="bg-zinc-900 rounded-2xl p-6">
@@ -97,9 +99,11 @@ export default function Home() {
         $100 MXN
       </p>
 
-      <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
-        Comprar
-      </button>
+      <a href="/product/little">
+  <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
+    Comprar
+  </button>
+</a>
     </div>
     {/* PRODUCTO 4 */}
 <div className="bg-zinc-900 rounded-2xl p-6">
@@ -121,9 +125,11 @@ export default function Home() {
     $80 MXN
   </p>
 
+  <a href="/product/super-organic">
   <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
     Comprar
   </button>
+</a>
 </div>
 {/* PRODUCTO 5 */}
 <div className="bg-zinc-900 rounded-2xl p-6">
@@ -145,20 +151,22 @@ export default function Home() {
     $95 MXN
   </p>
 
-  <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
-    Comprar
-  </button>
+  <a href="/product/spray-platinum">
+    <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
+      Comprar
+    </button>
+  </a>
 </div>
 {/* PRODUCTO 6 */}
 <div className="bg-zinc-900 rounded-2xl p-6">
   <img
     src="/products/4.jpeg"
-    alt="SANYWHERE"
+    alt="ANYWHERE"
     className="h-[580px] w-full object-contain rounded-xl mb-4 bg-zinc-900 p-2"
   />
 
   <h3 className="text-2xl font-semibold mb-2">
-    SANYWHERE
+    ANYWHERE
   </h3>
 
   <p className="text-gray-400 mb-4">
@@ -169,9 +177,11 @@ export default function Home() {
     $130 MXN
   </p>
 
+  <a href="/product/anywhere">
   <button className="w-full bg-white text-black py-3 rounded-xl font-semibold">
     Comprar
   </button>
+</a>
 </div>
 
   </div>
