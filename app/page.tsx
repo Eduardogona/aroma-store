@@ -6,7 +6,10 @@ import Link from "next/link";
 import CartDrawer from "./components/CartDrawer";
 
 type Product = {
+  id: string;
   name: string;
+  tag?: string;
+  description?: string;
   price: number;
   stock: number;
   qty: number;
