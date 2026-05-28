@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useCart } from "./context/CartContext";
 import Link from "next/link";
 import CartDrawer from "./components/CartDrawer";
@@ -19,6 +19,26 @@ export default function Home() {
   const { addItem, items } = useCart();
 
   const [openCart, setOpenCart] = useState(false);
+  
+  const [showTop, setShowTop] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const fullHeight = document.documentElement.offsetHeight;
+
+    const reachedBottom =
+      scrollTop + windowHeight >= fullHeight - 10;
+
+    setShowTop(reachedBottom);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll();
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   const [products, setProducts] = useState<Product[]>([
   {
@@ -294,7 +314,7 @@ export default function Home() {
   );
 
   return (
-    <main className="min-h-screen bg-black text-white p-6">
+    <main className="min-h-screen bg-black text-white p-6 pb-40">
 
       {/* HEADER */}
       <div className="flex justify-between items-center mb-6">
@@ -414,12 +434,14 @@ export default function Home() {
       />
 
       
-<button
-  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-  className="fixed bottom-32 right-4 bg-white text-black px-4 py-2 rounded-full shadow-lg z-50"
->
-  ⬆️ Arriba
-</button>
+{showTop && (
+  <button
+    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+    className="fixed bottom-32 right-4 bg-white text-black px-4 py-2 rounded-full shadow-lg z-50"
+  >
+    ⬆️ Arriba
+  </button>
+)}
     </main>
     
     
