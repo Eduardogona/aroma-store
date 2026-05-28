@@ -20,7 +20,7 @@ export default function Home() {
   const [products, setProducts] = useState<Product[]>([
     {
   name: "Organic Can",
-  tag: "Cherry",
+  tag: "Blacksss",
   description: "...",
   price: 75,
   stock: 10,
