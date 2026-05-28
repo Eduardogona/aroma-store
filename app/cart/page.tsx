@@ -122,7 +122,7 @@ export default function CartPage() {
             <div className="flex items-center gap-2">
 
               <button
-                onClick={() => updateQty(item.name, -1)}
+                onClick={() => updateQty(item.id, -1)}
                 className="w-9 h-9 bg-gray-800 rounded text-lg"
               >
                 -

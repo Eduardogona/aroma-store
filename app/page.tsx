@@ -18,16 +18,18 @@ export default function Home() {
   const [openCart, setOpenCart] = useState(false);
 
   const [products, setProducts] = useState<Product[]>([
-    {
-  name: "Organic Can",
-  tag: "Blacksss",
+  {
+  id: "organic-can-cherry",
+  name: "Organic Can sin tapa",
+  tag: "cherry",
   description: "...",
   price: 75,
   stock: 10,
   qty: 0
 },
 {
-  name: "Organic Can",
+  id: "organic-can-black",
+  name: "Organic Can sin tapa",
   tag: "Black",
   description: "...",
   price: 75,
@@ -35,7 +37,8 @@ export default function Home() {
   qty: 0
 },
     {
-  name: "Organic Can",
+  id: "organic-can-new-car-shine",
+  name: "Organic Can sin tapa",
   tag: "New Car Shine",
   description: "...",
   price: 75,
@@ -43,7 +46,8 @@ export default function Home() {
   qty: 0
 },
     {
-  name: "Organic Can",
+  id: "organic-can-bubble-gum",
+  name: "Organic Can sin tapa",
   tag: "Bubble Gum",
   description: "...",
   price: 75,
@@ -52,7 +56,8 @@ export default function Home() {
 },
 
 {
-  name: "Organic Can",
+  id: "organic-can-tropic-twist",
+  name: "Organic Can sin tapa",
   tag: "Tropic Twist",
   description: "...",
   price: 75,
@@ -61,7 +66,8 @@ export default function Home() {
 },
 
 {
-  name: "Organic Can",
+  id: "organic-can-pineapple-crush",
+  name: "Organic Can sin tapa",
   tag: "Pineapple Crush",
   description: "...",
   price: 75,
@@ -69,7 +75,8 @@ export default function Home() {
   qty: 0
 },
 {
-  name: "Organic Can",
+  id: "organic-can-strawberry",
+  name: "Organic Can sin tapa",
   tag: "Strawberry",
   description: "...",
   price: 75,
@@ -77,7 +84,8 @@ export default function Home() {
   qty: 0
 },
 {
-  name: "Organic Can",
+  id: "organic-can-vanilla-beach",
+  name: "Organic Can sin tapa",
   tag: "Vanilla beach",
   description: "...",
   price: 75,
@@ -85,6 +93,43 @@ export default function Home() {
   qty: 0
 },
 {
+  id: "organic-can-cran-burst",
+  name: "Organic Can sin tapa",
+  tag: "Cran Burst",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "organic-can-cherry-con-tapa",
+  name: "Organic Can con tapa",
+  tag: "Cherry",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "organic-can-black-con-tapa",
+  name: "Organic Can con tapa",
+  tag: "Black",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "organic-can-new-car-shine-con-tapa",
+  name: "Organic Can con tapa",
+  tag: "New Car Shine",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "organic-can-bubble-gum-con-tapa",
   name: "Organic Can",
   tag: "Cran Burst",
   description: "...",
@@ -93,72 +138,45 @@ export default function Home() {
   qty: 0
 },
 {
+  id: "organic-can-tropic-twist-con-tapa",
   name: "Organic Can",
-  tag: "New Car Shine",
+  tag: "Tropic twist",
   description: "...",
   price: 75,
   stock: 10,
   qty: 0
 },
 {
+  id: "organic-can-pineapple-crush-con-tapa",
   name: "Organic Can",
-  tag: "New Car Shine",
+  tag: "Pineapple crush",
   description: "...",
   price: 75,
   stock: 10,
   qty: 0
 },
 {
+  id: "organic-can-bubble-gum-con-tapa",
   name: "Organic Can",
-  tag: "New Car Shine",
+  tag: "Bubble Gum",
   description: "...",
   price: 75,
   stock: 10,
   qty: 0
 },
 {
-  name: "Organic Can",
-  tag: "New Car Shine",
+  id: "Super-Organic-pure-sunshine",
+  name: "Super Organic",
+  tag: "Pure Sunshine",
   description: "...",
   price: 75,
   stock: 10,
   qty: 0
 },
 {
-  name: "Organic Can",
-  tag: "New Car Shine",
-  description: "...",
-  price: 75,
-  stock: 10,
-  qty: 0
-},
-{
-  name: "Organic Can",
-  tag: "New Car Shine",
-  description: "...",
-  price: 75,
-  stock: 10,
-  qty: 0
-},
-{
-  name: "Organic Can",
-  tag: "New Car Shine",
-  description: "...",
-  price: 75,
-  stock: 10,
-  qty: 0
-},
-{
-  name: "Organic Can",
-  tag: "New Car Shine",
-  description: "...",
-  price: 75,
-  stock: 10,
-  qty: 0
-},
-{
-  name: "Organic Can",
-  tag: "New Car Shine",
+  id: "Super-Organic-cherry",
+  name: "Super Organic",
+  tag: "Cherry",
   description: "...",
   price: 75,
   stock: 10,
@@ -248,7 +266,7 @@ export default function Home() {
 
           return (
             <div
-              key={p.name}
+              key={p.id}
               className="bg-zinc-900 p-4 rounded-lg space-y-3"
             >
 
