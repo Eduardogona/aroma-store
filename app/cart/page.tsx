@@ -47,7 +47,7 @@ export default function CartPage() {
       `⏰ Horario de Entrega: ${schedule}\n\n` +
       `📦 Productos:\n${products}\n\n` +
       `🧾 Total productos: ${totalQty}\n` +
-      `💰 TOTAL: $${total}\n\n`+
+      `💰 TOTAL: $${total}\n\n` +
       `🙂 Gracias por tu pedido.En breve te contactaremos.\n` ;
       
 
