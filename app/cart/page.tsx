@@ -39,6 +39,7 @@ export default function CartPage() {
 
     // 📝 MENSAJE
     const message =
+   
       `🛒 NUEVO PEDIDO\n\n` +
       `👤 Nombre: ${name}\n` +
       `📞 Teléfono: ${phone}\n\n` +
@@ -46,7 +47,9 @@ export default function CartPage() {
       `⏰ Horario de Entrega: ${schedule}\n\n` +
       `📦 Productos:\n${products}\n\n` +
       `🧾 Total productos: ${totalQty}\n` +
-      `💰 TOTAL: $${total}`;
+      `💰 TOTAL: $${total}\n`+
+      `🙂 Gracias por tu pedido.En breve te contactaremos.\n\n` ;
+      
 
     // 📲 LINK WHATSAPP
     const url =
