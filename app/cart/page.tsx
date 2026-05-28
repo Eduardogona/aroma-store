@@ -42,6 +42,7 @@ export default function CartPage() {
       `🛒 NUEVO PEDIDO\n\n` +
       `👤 Nombre: ${name}\n` +
       `📞 Teléfono: ${phone}\n\n` +
+      `📍 Zona: ${zone}\n` +
       `📦 Productos:\n${products}\n\n` +
       `🧾 Total productos: ${totalQty}\n` +
       `💰 TOTAL: $${total}`;
