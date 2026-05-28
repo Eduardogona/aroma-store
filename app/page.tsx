@@ -18,10 +18,153 @@ export default function Home() {
   const [openCart, setOpenCart] = useState(false);
 
   const [products, setProducts] = useState<Product[]>([
-    { name: "Organic Can - Lavanda", price: 75, stock: 10, qty: 0 },
-    { name: "Organic Can - Vainilla", price: 75, stock: 5, qty: 0 },
-    { name: "Organic Can - Coco", price: 75, stock: 3, qty: 0 },
-    { name: "Organic Can - Citrus", price: 75, stock: 1, qty: 0 },
+    {
+  name: "Organic Can",
+  tag: "Cherry",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  name: "Organic Can",
+  tag: "Black",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+    {
+  name: "Organic Can",
+  tag: "New Car Shine",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+    {
+  name: "Organic Can",
+  tag: "Bubble Gum",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+
+{
+  name: "Organic Can",
+  tag: "Tropic Twist",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+
+{
+  name: "Organic Can",
+  tag: "Pineapple Crush",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  name: "Organic Can",
+  tag: "Strawberry",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  name: "Organic Can",
+  tag: "Vanilla beach",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  name: "Organic Can",
+  tag: "Cran Burst",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  name: "Organic Can",
+  tag: "New Car Shine",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  name: "Organic Can",
+  tag: "New Car Shine",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  name: "Organic Can",
+  tag: "New Car Shine",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  name: "Organic Can",
+  tag: "New Car Shine",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  name: "Organic Can",
+  tag: "New Car Shine",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  name: "Organic Can",
+  tag: "New Car Shine",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  name: "Organic Can",
+  tag: "New Car Shine",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  name: "Organic Can",
+  tag: "New Car Shine",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  name: "Organic Can",
+  tag: "New Car Shine",
+  description: "...",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+
   ]);
 
   // ➕ / ➖ stock control
@@ -113,7 +256,18 @@ export default function Home() {
                 Imagen
               </div>
 
-              <h2 className="font-semibold">{p.name}</h2>
+<h2 className="font-semibold text-lg flex items-center gap-3">
+  <span>{p.name}</span>
+
+  {p.tag && (
+  <span className="bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full text-sm font-semibold tracking-wide border border-emerald-500/40">
+    {p.tag}
+  </span>
+)}
+</h2>
+              <p className="text-sm text-gray-400">
+  {p.description}
+</p>
 
               <p className="text-green-400">${p.price}</p>
 
