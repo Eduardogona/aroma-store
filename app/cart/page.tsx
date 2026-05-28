@@ -135,12 +135,12 @@ export default function CartPage() {
       )}
 
       {/* BOTÓN WHATSAPP */}
-      <div className="fixed bottom-0 left-0 right-0 bg-green-500 p-4">
+      <div className="fixed bottom-4 left-0 right-0 max-w-xs mx-auto z-50">
 
         <button
           onClick={sendWhatsApp}
           disabled={items.length === 0}
-          className="w-full bg-white text-black font-bold py-4 rounded text-lg disabled:opacity-40"
+          className="max-w-xs bg-white text-black font-bold py-4 rounded text-lg disabled:opacity-40"
         >
           📲 Enviar pedido por WhatsApp
         </button>
