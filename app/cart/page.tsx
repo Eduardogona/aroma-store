@@ -24,6 +24,8 @@ export default function CartPage() {
     // 👤 DATOS CLIENTE
     const name = prompt("Tu nombre:");
     const phone = prompt("Tu teléfono:");
+    const zone = prompt("¿En qué zona te localizas para coordinar la entrega de tu pedido?");
+    const schedule = prompt("Horario de entrega de tu preferencia (ej. 3:00 pm a 6:00 pm)");
 
     if (!name) return;
 
