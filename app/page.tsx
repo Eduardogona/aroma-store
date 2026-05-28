@@ -208,11 +208,12 @@ export default function Home() {
   const addToCart = (product: Product) => {
     if (product.qty <= 0) return;
 
-    addItem({
-      name: product.name,
-      price: product.price,
-      qty: product.qty,
-    });
+   addItem({
+  id: product.id,
+  name: product.name,
+  price: product.price,
+  qty: product.qty,
+});
 
     setProducts((prev) =>
       prev.map((p) =>
