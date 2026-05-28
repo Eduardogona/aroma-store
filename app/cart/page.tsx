@@ -43,6 +43,7 @@ export default function CartPage() {
       `👤 Nombre: ${name}\n` +
       `📞 Teléfono: ${phone}\n\n` +
       `📍 Zona: ${zone}\n` +
+      `⏰ Horario: ${schedule}\n\n` +
       `📦 Productos:\n${products}\n\n` +
       `🧾 Total productos: ${totalQty}\n` +
       `💰 TOTAL: $${total}`;
