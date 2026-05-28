@@ -413,6 +413,16 @@ export default function Home() {
         onClose={() => setOpenCart(false)}
       />
 
+      
+<button
+  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+  className="fixed bottom-32 right-4 bg-white text-black px-4 py-2 rounded-full shadow-lg z-50"
+>
+  ⬆️ Arriba
+</button>
     </main>
+    
+    
+    
   );
 }
