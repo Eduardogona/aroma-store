@@ -97,7 +97,7 @@ export default function CartPage() {
       ) : (
         items.map((item, i) => (
           <div
-            key={i}
+            key={item.id}
             className="bg-zinc-900 p-4 rounded mb-3 flex justify-between items-center"
           >
 
@@ -129,7 +129,7 @@ export default function CartPage() {
               </button>
 
               <button
-                onClick={() => updateQty(item.name, 1)}
+                onClick={() => updateQty(item.id, 1)}
                 className="w-9 h-9 bg-gray-800 rounded text-lg"
               >
                 +

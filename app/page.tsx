@@ -19,7 +19,7 @@ export default function Home() {
 
   const [products, setProducts] = useState<Product[]>([
   {
-  id: "organic-can-cherry",
+  id: "organic-can-sin-cherry",
   name: "Organic Can sin tapa",
   tag: "cherry",
   description: "...",
@@ -28,7 +28,7 @@ export default function Home() {
   qty: 0
 },
 {
-  id: "organic-can-black",
+  id: "organic-can-sin-black",
   name: "Organic Can sin tapa",
   tag: "Black",
   description: "...",
@@ -37,7 +37,7 @@ export default function Home() {
   qty: 0
 },
     {
-  id: "organic-can-new-car-shine",
+  id: "organic-can-sin-new-car-shine",
   name: "Organic Can sin tapa",
   tag: "New Car Shine",
   description: "...",
@@ -46,7 +46,7 @@ export default function Home() {
   qty: 0
 },
     {
-  id: "organic-can-bubble-gum",
+  id: "organic-can-sin-bubble-gum",
   name: "Organic Can sin tapa",
   tag: "Bubble Gum",
   description: "...",
@@ -56,7 +56,7 @@ export default function Home() {
 },
 
 {
-  id: "organic-can-tropic-twist",
+  id: "organic-can-sin-tropic-twist",
   name: "Organic Can sin tapa",
   tag: "Tropic Twist",
   description: "...",
@@ -66,7 +66,7 @@ export default function Home() {
 },
 
 {
-  id: "organic-can-pineapple-crush",
+  id: "organic-can-sin-pineapple-crush",
   name: "Organic Can sin tapa",
   tag: "Pineapple Crush",
   description: "...",
@@ -75,7 +75,7 @@ export default function Home() {
   qty: 0
 },
 {
-  id: "organic-can-strawberry",
+  id: "organic-can-sin-strawberry",
   name: "Organic Can sin tapa",
   tag: "Strawberry",
   description: "...",
@@ -84,7 +84,7 @@ export default function Home() {
   qty: 0
 },
 {
-  id: "organic-can-vanilla-beach",
+  id: "organic-can-sin-vanilla-beach",
   name: "Organic Can sin tapa",
   tag: "Vanilla beach",
   description: "...",
@@ -93,7 +93,7 @@ export default function Home() {
   qty: 0
 },
 {
-  id: "organic-can-cran-burst",
+  id: "organic-can-sin-cran-burst",
   name: "Organic Can sin tapa",
   tag: "Cran Burst",
   description: "...",
@@ -129,7 +129,7 @@ export default function Home() {
   qty: 0
 },
 {
-  id: "organic-can-bubble-gum-con-tapa",
+  id: "organic-can-cran-burst-con-tapa",
   name: "Organic Can",
   tag: "Cran Burst",
   description: "...",
