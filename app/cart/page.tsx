@@ -5,46 +5,17 @@ import { useCart } from "../context/CartContext";
 export default function CartPage() {
   const { items, updateQty, clearCart } = useCart();
 
+  // 💰 TOTAL
   const total = items.reduce(
     (s, i) => s + i.qty * i.price,
     0
   );
 
+  // 🛒 TOTAL PRODUCTOS
   const totalQty = items.reduce(
     (s, i) => s + i.qty,
     0
   );
-
-  const sendWhatsApp = () => {
-    if (items.length === 0) return;
-
-    const name = prompt("Tu nombre:");
-    const phone = prompt("Teléfono (opcional):");
-
-    if (!name) return;
-
-    const products = items
-      .map(
-        (i) =>
-          `- ${i.name} x${i.qty} = $${i.qty * i.price}`
-      )
-      .join("\n");
-
-    const message =
-      `🛒 NUEVO PEDIDO\n\n` +
-      `👤 Nombre: ${name}\n` +
-      (phone ? `📞 Tel: ${phone}\n\n` : "\n") +
-      `📦 Productos:\n${products}\n\n` +
-      `💰 TOTAL: $${total}`;
-
-    const whatsappNumber = "521XXXXXXXXXX"; // 👈 CAMBIA TU NUMERO
-
-    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-      message
-    )}`;
-
-    window.open(url, "_blank");
-  };
 
   return (
     <main className="min-h-screen bg-black text-white p-6 pb-28">
@@ -86,7 +57,10 @@ export default function CartPage() {
 
             {/* INFO */}
             <div>
-              <p className="font-bold">{item.name}</p>
+
+              <p className="font-bold">
+                {item.name}
+              </p>
 
               <p className="text-green-400">
                 ${item.price * item.qty}
@@ -95,6 +69,7 @@ export default function CartPage() {
               <p className="text-sm text-gray-400">
                 Cantidad: {item.qty}
               </p>
+
             </div>
 
             {/* CONTROLES */}
@@ -120,16 +95,15 @@ export default function CartPage() {
         ))
       )}
 
-      {/* 🔥 BOTÓN WHATSAPP FIJO (IMPORTANTE) */}
+      {/* BOTÓN WHATSAPP */}
       <div className="fixed bottom-0 left-0 right-0 bg-green-500 p-4">
 
-        <button
-          onClick={sendWhatsApp}
-          disabled={items.length === 0}
-          className="w-full text-black font-bold py-3 rounded disabled:opacity-40"
+        <a
+          href="https://api.whatsapp.com/send?phone=525527305917"
+          className="w-full block text-center bg-white text-black font-bold py-3 rounded"
         >
           📲 Enviar pedido por WhatsApp
-        </button>
+        </a>
 
       </div>
 
