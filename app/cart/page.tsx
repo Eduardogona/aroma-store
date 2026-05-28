@@ -48,7 +48,7 @@ export default function CartPage() {
       `📦 Productos:\n${products}\n\n` +
       `🧾 Total productos: ${totalQty}\n` +
       `💰 TOTAL: $${total}\n`+
-      `🙂 Gracias por tu pedido.En breve te contactaremos.\n\n` ;
+      `🙂 Gracias por tu pedido.En breve te contactaremos.\n\n\n` ;
       
 
     // 📲 LINK WHATSAPP
