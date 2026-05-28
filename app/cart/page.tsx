@@ -5,7 +5,7 @@ import { useCart } from "../context/CartContext";
 export default function CartPage() {
   const { items, updateQty, clearCart } = useCart();
 
-  // 💰 TOTAL $
+  // 💰 TOTAL
   const total = items.reduce(
     (s, i) => s + i.qty * i.price,
     0
@@ -17,10 +17,17 @@ export default function CartPage() {
     0
   );
 
-  // 📲 GENERAR LINK WHATSAPP
-  const whatsappMessage = () => {
-    if (items.length === 0) return "#";
+  // 📲 ENVIAR WHATSAPP
+  const sendWhatsApp = () => {
+    if (items.length === 0) return;
 
+    // 👤 DATOS CLIENTE
+    const name = prompt("Tu nombre:");
+    const phone = prompt("Tu teléfono:");
+
+    if (!name) return;
+
+    // 📦 PRODUCTOS
     const products = items
       .map(
         (i) =>
@@ -28,15 +35,23 @@ export default function CartPage() {
       )
       .join("\n");
 
+    // 📝 MENSAJE
     const message =
       `🛒 NUEVO PEDIDO\n\n` +
+      `👤 Nombre: ${name}\n` +
+      `📞 Teléfono: ${phone}\n\n` +
       `📦 Productos:\n${products}\n\n` +
       `🧾 Total productos: ${totalQty}\n` +
       `💰 TOTAL: $${total}`;
 
-    return `https://api.whatsapp.com/send?phone=525527305917&text=${encodeURIComponent(
-      message
-    )}`;
+    // 📲 LINK WHATSAPP
+    const url =
+      `https://api.whatsapp.com/send?phone=525527305917&text=${encodeURIComponent(
+        message
+      )}`;
+
+    // 🚀 ABRIR
+    window.location.href = url;
   };
 
   return (
@@ -67,7 +82,7 @@ export default function CartPage() {
 
       </div>
 
-      {/* LISTA PRODUCTOS */}
+      {/* PRODUCTOS */}
       {items.length === 0 ? (
         <p className="text-gray-400">
           No hay productos en el carrito
@@ -96,7 +111,7 @@ export default function CartPage() {
 
             </div>
 
-            {/* CONTROLES */}
+            {/* BOTONES */}
             <div className="flex items-center gap-2">
 
               <button
@@ -122,12 +137,13 @@ export default function CartPage() {
       {/* BOTÓN WHATSAPP */}
       <div className="fixed bottom-0 left-0 right-0 bg-green-500 p-4">
 
-        <a
-          href={whatsappMessage()}
-          className="w-full block text-center bg-white text-black font-bold py-4 rounded text-lg"
+        <button
+          onClick={sendWhatsApp}
+          disabled={items.length === 0}
+          className="w-full bg-white text-black font-bold py-4 rounded text-lg disabled:opacity-40"
         >
           📲 Enviar pedido por WhatsApp
-        </a>
+        </button>
 
       </div>
 
