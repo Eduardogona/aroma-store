@@ -146,11 +146,11 @@ useEffect(() => {
               className="bg-zinc-900 p-4 rounded-lg space-y-3"
             >
 
-              <div className="h-44 w-full bg-zinc-800 rounded-lg overflow-hidden flex items-center justify-center">
+              <div className="h-56 w-40 mx-auto bg-zinc-800 rounded-lg overflow-hidden flex items-center justify-center">
   <img
     src={p.image}
     alt={p.name}
-    className="w-full h-full object-contain p-2"
+    className="w-full h-full object-contain p-3"
   />
 </div>
 
