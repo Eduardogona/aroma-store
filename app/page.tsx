@@ -264,7 +264,7 @@ useEffect(() => {
   price: 90,
   stock: 10,
   qty: 0,
-  image:"/products/Little-joe-strawberry.jpeg"
+  image:"/products/Little-joe-Strawberry.jpeg"
 },
 {
   id: "Little-joe-flower",
