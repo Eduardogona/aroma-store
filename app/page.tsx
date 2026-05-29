@@ -51,7 +51,7 @@ useEffect(() => {
   price: 75,
   stock: 10,
   qty: 0,
-  image : "/products/organic-can-sin-cherry.jpeg"
+  /*image : "/products/organic-can-sin-cherry.jpeg"*/
  
 },
 
