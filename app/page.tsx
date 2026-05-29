@@ -254,7 +254,7 @@ useEffect(() => {
   price: 90,
   stock: 10,
   qty: 0,
-  image:"/products/little-joe-cherry.jpeg"
+  image:"/products/Little-joe-cherry.jpeg"
 },
 {
   id: "Little-joe-Strawberry",
@@ -264,7 +264,7 @@ useEffect(() => {
   price: 90,
   stock: 10,
   qty: 0,
-  image:"/products/little-joe-strawberry.jpeg"
+  image:"/products/Little-joe-strawberry.jpeg"
 },
 {
   id: "Little-joe-flower",
@@ -274,7 +274,7 @@ useEffect(() => {
   price: 90,
   stock: 10,
   qty: 0,
-  image:"/products/little-joe-flower.jpeg"
+  image:"/products/Little-joe-flower.jpeg"
 },
 {
   id: "Little-joe-black",
@@ -284,7 +284,7 @@ useEffect(() => {
   price: 90,
   stock: 10,
   qty: 0,
-  image:"/products/little-joe-black.jpeg"
+  image:"/products/Little-joe-black.jpeg"
 },
 {
   id: "Little-Duck-happy-splash",
@@ -294,7 +294,7 @@ useEffect(() => {
   price: 90,
   stock: 10,
   qty: 0,
-  image:"/products/little-duck-happy-splash.jpeg"
+  image:"/products/Little-Duck-happy-splash.jpeg"
 },
 {
   id: "Little-dog-fruit",
@@ -304,7 +304,7 @@ useEffect(() => {
   price: 90,
   stock: 10,
   qty: 0,
-  image:"/products/little-dog-fruit.jpeg"
+  image:"/products/Little-Dog-fruit.jpeg"
 },
 {
   id: "Little-Dog-fresh-mint",
@@ -314,7 +314,7 @@ useEffect(() => {
   price: 90,
   stock: 10,
   qty: 0,
-  image:"/products/little-dog-fresh-mint.jpeg"
+  image:"/products/Little-Dog-fresh-mint.jpeg"
 },
 {
   id: "Little-Dog-passion",
@@ -324,7 +324,7 @@ useEffect(() => {
   price: 90,
   stock: 10,
   qty: 0,
-  image:"/products/little-dog-passion.jpeg"
+  image:"/products/Little-Dog-passion.jpeg"
 },
 {
   id: "Spray-platinum-cherry",
