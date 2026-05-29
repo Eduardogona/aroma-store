@@ -5,6 +5,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 type Item = {
   id: string;
   name: string;
+  tag?: string;
   price: number;
   qty: number;
 };
