@@ -377,16 +377,6 @@ useEffect(() => {
   image:"/products/Spray-Platinum-blue-lava.jpeg"
 },
 {
-  id: "Anywhare-Spray",
-  name: "Anywhare Spray",
-  tag: "Cherry,Black,Lemon Lavender",
-  description: "Elimina olores y refresca cualquier espacio con la tecnología PARA+ de eliminación de olores.",
-  price: 130,
-  stock: 10,
-  qty: 0,
-  image:"/products/anywhare-spray.jpeg"
-},
-{
   id: "Anywhare-Spray-cherry",
   name: "Anywhare Spray",
   tag: "Cherry",
