@@ -56,6 +56,228 @@ useEffect(() => {
 },
 
 
+/*
+
+{
+  id: "organic-can-sin-black",
+  name: "Organic Can sin tapa",
+  tag: "Black",
+  description: "Fragancia intensa y envolvente con almohadillas aromáticas y diseño abierto sin regulador de aroma.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+    {
+  id: "organic-can-sin-new-car-shine",
+  name: "Organic Can sin tapa",
+  tag: "New Car Shine",
+  description: "Fragancia intensa y envolvente con almohadillas aromáticas y diseño abierto sin regulador de aroma.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+    {
+  id: "organic-can-sin-bubble-gum",
+  name: "Organic Can sin tapa",
+  tag: "Bubble Gum",
+  description: "Fragancia intensa y envolvente con almohadillas aromáticas y diseño abierto sin regulador de aroma.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+
+{
+  id: "organic-can-sin-tropic-twist",
+  name: "Organic Can sin tapa",
+  tag: "Tropic Twist",
+  description: "Fragancia intensa y envolvente con almohadillas aromáticas y diseño abierto sin regulador de aroma.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+
+{
+  id: "organic-can-sin-pineapple-crush",
+  name: "Organic Can sin tapa",
+  tag: "Pineapple Crush",
+  description: "Fragancia intensa y envolvente con almohadillas aromáticas y diseño abierto sin regulador de aroma.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "organic-can-sin-strawberry",
+  name: "Organic Can sin tapa",
+  tag: "Strawberry",
+  description: "Fragancia intensa y envolvente con almohadillas aromáticas y diseño abierto sin regulador de aroma.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "organic-can-sin-vanilla-beach",
+  name: "Organic Can sin tapa",
+  tag: "Vanilla beach",
+  description: "Fragancia intensa y envolvente con almohadillas aromáticas y diseño abierto sin regulador de aroma.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "organic-can-sin-cran-burst",
+  name: "Organic Can sin tapa",
+  tag: "Cran Burst",
+  description: "Fragancia intensa y envolvente con almohadillas aromáticas y diseño abierto sin regulador de aroma.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "organic-can-cherry-con-tapa",
+  name: "Organic Can con tapa",
+  tag: "Cherry",
+  description: "Controla la intensidad del aroma con el regulador integrado en la tapa, desde una fragancia suave hasta más intensa.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "organic-can-black-con-tapa",
+  name: "Organic Can con tapa",
+  tag: "Black",
+  description: "Controla la intensidad del aroma con el regulador integrado en la tapa, desde una fragancia suave hasta más intensa.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "organic-can-new-car-shine-con-tapa",
+  name: "Organic Can con tapa",
+  tag: "New Car Shine",
+  description: "Controla la intensidad del aroma con el regulador integrado en la tapa, desde una fragancia suave hasta más intensa.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "organic-can-cran-burst-con-tapa",
+  name: "Organic Can",
+  tag: "Cran Burst",
+  description: "Controla la intensidad del aroma con el regulador integrado en la tapa, desde una fragancia suave hasta más intensa.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "organic-can-tropic-twist-con-tapa",
+  name: "Organic Can",
+  tag: "Tropic twist",
+  description: "Controla la intensidad del aroma con el regulador integrado en la tapa, desde una fragancia suave hasta más intensa.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "organic-can-pineapple-crush-con-tapa",
+  name: "Organic Can",
+  tag: "Pineapple crush",
+  description: "Controla la intensidad del aroma con el regulador integrado en la tapa, desde una fragancia suave hasta más intensa.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "organic-can-bubble-gum-con-tapa",
+  name: "Organic Can",
+  tag: "Bubble Gum",
+  description: "Controla la intensidad del aroma con el regulador integrado en la tapa, desde una fragancia suave hasta más intensa.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "Super-Organic-pure-sunshine",
+  name: "Super Organic",
+  tag: "Pure Sunshine",
+  description: "Ambientador de alta intensidad. Coloca la almohadilla bajo el asiento o en cualquier espacio para un aroma fresco y duradero.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "Little-joe-ocean-spash",
+  name: "Little Joe",
+  tag: "Ocean-spash",
+  description: "Ambientador para auto. Colócalo en las rejillas de ventilación para disfrutar de una fragancia fresca y continua.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "Little-joe-flower",
+  name: "Little joe",
+  tag: "Flower",
+  description: "Ambientador para auto. Colócalo en las rejillas de ventilación para disfrutar de una fragancia fresca y continua.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "Little-joe-black",
+  name: "Little joe",
+  tag: "Black",
+  description: "Ambientador para auto. Colócalo en las rejillas de ventilación para disfrutar de una fragancia fresca y continua.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "Little-Duck-happy-splash",
+  name: "Little Duck",
+  tag: "Happy Splash",
+  description: "Ambientador para auto. Colócalo en las rejillas de ventilación para disfrutar de una fragancia fresca y continua.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "Little-Dog-fresh-mint",
+  name: "Little Dog",
+  tag: "Fresh Mint",
+  description: "Ambientador para auto. Colócalo en las rejillas de ventilación para disfrutar de una fragancia fresca y continua.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "Little-joe-fruit",
+  name: "Little joe",
+  tag: "Fruit ",
+  description: "Ambientador para auto. Colócalo en las rejillas de ventilación para disfrutar de una fragancia fresca y continua.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "Spray-Platinum",
+  name: "Spray Platinum",
+  tag: "Cherry,Black,New car,Tropic Twist,Blue Lava",
+  description: "Spray concentrado a base de aceite. Elimina malos olores y refresca al instante. Con pocas pulverizaciones, el aroma dura todo el día. También puede aplicarse en Organic Can y Super Organic para prolongar su fragancia. Ideal para usar en algodón y colocarlo en cualquier espacio.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+{
+  id: "Anywhare-Spray",
+  name: "Anywhare Spray",
+  tag: "Cherry,Black,Lemon Lavender",
+  description: "Elimina olores y refresca cualquier espacio con la tecnología PARA+ de eliminación de olores.",
+  price: 75,
+  stock: 10,
+  qty: 0
+},
+*/
+
 
 
   ]);
@@ -146,11 +368,11 @@ useEffect(() => {
               className="bg-zinc-900 p-4 rounded-lg space-y-3"
             >
 
-              <div className="h-56 w-40 mx-auto bg-zinc-800 rounded-lg overflow-hidden flex items-center justify-center">
+              <div className="h-56 w-100 mx-auto bg-zinc-800 rounded-lg overflow-hidden">
   <img
     src={p.image}
     alt={p.name}
-    className="w-full h-full object-contain p-3"
+    className="w-full h-full object-cover"
   />
 </div>
 
