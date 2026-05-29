@@ -304,7 +304,7 @@ useEffect(() => {
   price: 90,
   stock: 10,
   qty: 0,
-  image:"/products/Little-Dog-fruit.jpeg"
+  image:"/products/Little-dog-fruit.jpeg"
 },
 {
   id: "Little-Dog-fresh-mint",
