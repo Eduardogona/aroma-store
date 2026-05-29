@@ -361,12 +361,8 @@ useEffect(() => {
               className="bg-zinc-900 p-4 rounded-lg space-y-3"
             >
 
-              <div className="h-44 w-full bg-zinc-800 rounded-lg overflow-hidden flex items-center justify-center">
-                <img
-  src={p.image}
-  alt={p.name}
-  className="w-full h-full object-contain p-2"
-/>
+              <div className="h-40 bg-zinc-800 rounded flex items-center justify-center">
+                Imagen
               </div>
 
 <h2 className="font-semibold text-lg flex items-center gap-3">
