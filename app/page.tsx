@@ -13,7 +13,7 @@ type Product = {
   price: number;
   stock: number;
   qty: number;
-  image: string;
+  /*image: string;*/
   
 };
 
@@ -56,7 +56,7 @@ useEffect(() => {
 },
 
 
-/*
+
 
 {
   id: "organic-can-sin-black",
@@ -276,7 +276,7 @@ useEffect(() => {
   stock: 10,
   qty: 0
 },
-*/
+
 
 
 
@@ -323,7 +323,7 @@ useEffect(() => {
   );
 
   return (
-    <main className="min-h-screen bg-black text-white p-6 max-w-[420px] mx-auto border border-zinc-700 rounded-xl shadow-2xl">
+    <main className="min-h-screen bg-black text-white p-6 pb-40">
 
       {/* HEADER */}
       <div className="flex justify-between items-center mb-6">
