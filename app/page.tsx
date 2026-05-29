@@ -323,7 +323,7 @@ useEffect(() => {
   );
 
   return (
-    <main className="min-h-screen bg-black text-white p-6 pb-40">
+    <main className="min-h-screen bg-black text-white p-6 max-w-[420px] mx-auto border border-zinc-700 rounded-xl shadow-2xl">
 
       {/* HEADER */}
       <div className="flex justify-between items-center mb-6">
