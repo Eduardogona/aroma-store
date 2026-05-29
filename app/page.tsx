@@ -472,7 +472,7 @@ useEffect(() => {
             onClick={() => setOpenCart(true)}
             className="bg-white text-black px-4 py-1 rounded font-semibold"
           >
-            🛒 Drawer ({cartTotal})
+            🛒 Carrito ({cartTotal})
           </button>
 
           {/* GO TO CART PAGE */}
@@ -480,7 +480,7 @@ useEffect(() => {
             href="/cart"
             className="bg-green-500 text-black px-4 py-1 rounded font-semibold"
           >
-            Checkout
+            Pedir por WhatsApp
           </Link>
 
         </div>
