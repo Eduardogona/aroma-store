@@ -37,31 +37,29 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     if (item.qty <= 0) return;
 
     setItems((prev) => {
-      const exist = prev.find((p) => p.name === item.name);
+  const exist = prev.find((p) => p.id === item.id);
 
-      if (exist) {
-        return prev.map((p) =>
-          p.name === item.name
-            ? { ...p, qty: p.qty + item.qty }
-            : p
-        );
-      }
+  if (exist) {
+    return prev.map((p) =>
+      p.id === item.id
+        ? { ...p, qty: p.qty + item.qty }
+        : p
+    );
+  }
 
       return [...prev, item];
     });
   };
 
-  const updateQty = (name: string, delta: number) => {
-    setItems((prev) =>
-      prev
-        .map((p) =>
-          p.name === name
-            ? { ...p, qty: p.qty + delta }
-            : p
-        )
-        .filter((p) => p.qty > 0) // si llega a 0 se elimina solo
-    );
-  };
+  const updateQty = (id: string, delta: number) => {
+  setItems((prev) =>
+    prev.map((p) =>
+      p.id === id
+        ? { ...p, qty: Math.max(1, p.qty + delta) }
+        : p
+    )
+  );
+};
 
   const removeItem = (name: string) => {
     setItems((prev) => prev.filter((p) => p.name !== name));

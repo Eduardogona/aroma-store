@@ -44,7 +44,7 @@ export default function CartDrawer({
               className="bg-zinc-900 p-3 rounded"
             >
 
-              <p className="font-bold">{item.name}</p>
+              <p className="font-bold">{item.name} - {item.tag}</p>
 
               <p className="text-green-400">
                 ${item.price * item.qty}
@@ -54,7 +54,7 @@ export default function CartDrawer({
               <div className="flex items-center gap-2 mt-2">
 
                 <button
-                  onClick={() => updateQty(item.name, -1)}
+                  onClick={() => updateQty(item.id, -1)}
                   className="w-7 h-7 bg-gray-800 rounded"
                 >
                   -
@@ -63,7 +63,7 @@ export default function CartDrawer({
                 <span>{item.qty}</span>
 
                 <button
-                  onClick={() => updateQty(item.name, 1)}
+                  onClick={() => updateQty(item.id, 1)}
                   className="w-7 h-7 bg-gray-800 rounded"
                 >
                   +

@@ -31,12 +31,11 @@ export default function CartPage() {
 
     // 📦 PRODUCTOS
     const products = items
-      .map(
-        (i) =>
-          `• ${i.name} x${i.qty} = $${i.qty * i.price}`
-      )
-      .join("\n");
-
+  .map(
+    (i) =>
+      `• ${i.name} - ${i.tag} x${i.qty} = $${i.qty * i.price}`
+  )
+  .join("\n");
     // 📝 MENSAJE
     const message =
    
@@ -105,7 +104,7 @@ export default function CartPage() {
             <div>
 
               <p className="font-bold text-lg">
-                {item.name}
+                {item.name} - {item.tag}
               </p>
 
               <p className="text-sm text-gray-400">
