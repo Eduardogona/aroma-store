@@ -500,7 +500,7 @@ useEffect(() => {
               className="bg-zinc-900 p-4 rounded-lg space-y-3"
             >
 
-              <div className="h-56 w-64 mx-auto bg-zinc-800 rounded-lg overflow-hidden">
+              <div className="h-70 w-70 mx-auto bg-zinc-800 rounded-lg overflow-hidden">
   <img
     src={p.image}
     alt={p.name}
