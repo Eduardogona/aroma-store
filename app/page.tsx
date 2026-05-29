@@ -48,7 +48,9 @@ useEffect(() => {
   description: "Fragancia intensa y envolvente con almohadillas aromáticas y diseño abierto sin regulador de aroma.",
   price: 75,
   stock: 10,
-  qty: 0
+  qty: 0,
+  image: "/products/organic-can-sin-cherry.jpeg"
+ 
 },
 {
   id: "organic-can-sin-black",
@@ -359,8 +361,12 @@ useEffect(() => {
               className="bg-zinc-900 p-4 rounded-lg space-y-3"
             >
 
-              <div className="h-40 bg-zinc-800 rounded flex items-center justify-center">
-                Imagen
+              <div className="h-44 w-full bg-zinc-800 rounded-lg overflow-hidden flex items-center justify-center">
+                <img
+  src={p.image}
+  alt={p.name}
+  className="w-full h-full object-contain p-2"
+/>
               </div>
 
 <h2 className="font-semibold text-lg flex items-center gap-3">
@@ -436,10 +442,12 @@ useEffect(() => {
       
 {showTop && (
   <button
-    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-    className="fixed bottom-32 right-4 bg-white text-black px-4 py-2 rounded-full shadow-lg z-50"
+    onClick={() =>
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+    className="fixed bottom-32 right-4 bg-white text-black px-4 py-3 rounded-full shadow-lg z-50 transition-all duration-300 opacity-100 hover:scale-110 active:scale-95"
   >
-    ⬆️ Arriba
+    ⬆️
   </button>
 )}
     </main>
