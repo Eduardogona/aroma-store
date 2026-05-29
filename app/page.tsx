@@ -21,6 +21,7 @@ export default function Home() {
   const { addItem, items } = useCart();
 
   const [openCart, setOpenCart] = useState(false);
+  const [filter, setFilter] = useState("Todos");
   
   const [showTop, setShowTop] = useState(false);
 
@@ -431,25 +432,21 @@ useEffect(() => {
 
   // 🛒 add to cart
   const addToCart = (product: Product) => {
-    if (product.qty <= 0) return;
 
-   addItem({
-  id: product.id,
-  name: product.name,
-  tag: product.tag,
-  price: product.price,
-  qty: product.qty,
-});
+};
 
-    setProducts((prev) =>
-      prev.map((p) =>
-        p.id === product.id ? { ...p, qty: 0 } : p
-      )
-    );
-  };
+const filteredProducts =
+  filter === "Todos"
+    ? products
+    : products.filter((p) => {
+        if (filter === "Little") {
+          return p.name.startsWith("Little");
+        }
 
-  // 🛒 cart counter
-  const cartTotal = items.reduce(
+        return p.name === filter;
+      });
+
+const cartTotal = items.reduce(
     (sum: number, i: any) => sum + i.qty,
     0
   );
@@ -487,10 +484,26 @@ useEffect(() => {
 
       </div>
 
+      <div className="mb-6">
+  <select
+    value={filter}
+    onChange={(e) => setFilter(e.target.value)}
+    className="w-full bg-zinc-900 border border-zinc-700 p-3 rounded-lg"
+  >
+    <option>Todos</option>
+    <option>Organic Can sin tapa</option>
+    <option>Organic Can con tapa</option>
+    <option>Super Organic</option>
+    <option>Little</option>
+    <option>Anywhare Spray</option>
+    <option>Spray Platinum</option>
+  </select>
+</div>
+
       {/* PRODUCTS */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
-        {products.map((p) => {
+        {filteredProducts.map((p) => {
           const subtotal = p.qty * p.price;
           const agotado = p.stock === 0;
 
