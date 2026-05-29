@@ -13,6 +13,7 @@ type Product = {
   price: number;
   stock: number;
   qty: number;
+  image: string;
 };
 
 export default function Home() {
@@ -49,7 +50,7 @@ useEffect(() => {
   price: 75,
   stock: 10,
   qty: 0,
-  image: "/products/organic-can-sin-cherry.jpeg"
+  image : "/products/organic-can-sin-cherry.jpeg"
  
 },
 {
@@ -361,9 +362,13 @@ useEffect(() => {
               className="bg-zinc-900 p-4 rounded-lg space-y-3"
             >
 
-              <div className="h-40 bg-zinc-800 rounded flex items-center justify-center">
-                Imagen
-              </div>
+ <div className="h-44 w-full bg-zinc-800 rounded-lg overflow-hidden flex items-center justify-center">
+  <img
+    src={p.image}
+    alt={p.name}
+    className="w-full h-full object-contain p-2"
+  />
+</div>
 
 <h2 className="font-semibold text-lg flex items-center gap-3">
   <span>{p.name}</span>
