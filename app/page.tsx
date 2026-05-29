@@ -204,7 +204,7 @@ useEffect(() => {
   price: 80,
   stock: 10,
   qty: 0,
-  image:"/products/super-organic-blue-lava.jpeg"
+  image:"/products/Super-Organic-blue-lava.jpeg"
 },
 {
   id: "Super-Organic-black",
@@ -214,7 +214,7 @@ useEffect(() => {
   price: 80,
   stock: 10,
   qty: 0,
-  image:"/products/super-organic-black.jpeg"
+  image:"/products/Super-Organic-black.jpeg"
 },
 {
   id: "Super-Organic-tropic-twist",
@@ -224,7 +224,7 @@ useEffect(() => {
   price: 80,
   stock: 10,
   qty: 0,
-  image:"/products/super-organic-tropic-twist.jpeg"
+  image:"/products/Super-Organic-tropic-twist.jpeg"
 },
 {
   id: "Super-Organic-pure-sunshine",
@@ -234,7 +234,7 @@ useEffect(() => {
   price: 80,
   stock: 10,
   qty: 0,
-  image:"/products/super-organic-pure-sunshine.jpeg"
+  image:"/products/Super-Organic-pure-sunshine.jpeg"
 },
 {
   id: "Super-Organic-cherry",
@@ -244,7 +244,7 @@ useEffect(() => {
   price: 80,
   stock: 10,
   qty: 0,
-  image:"/products/super-organic-cherry.jpeg"
+  image:"/products/Super-Organic-cherry.jpeg"
 },
 {
   id: "Little-joe-cherry",
