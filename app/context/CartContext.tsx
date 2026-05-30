@@ -13,9 +13,9 @@ type Item = {
 type CartType = {
   items: Item[];
   addItem: (item: Item) => void;
-  removeItem: (name: string) => void;
+  removeItem: (id: string) => void;
   clearCart: () => void;
-  updateQty: (name: string, delta: number) => void;
+  updateQty: (id: string, delta: number) => void;
 };
 
 const CartContext = createContext<CartType | null>(null);
@@ -62,9 +62,9 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   );
 };
 
-  const removeItem = (name: string) => {
-    setItems((prev) => prev.filter((p) => p.name !== name));
-  };
+  const removeItem = (id: string) => {
+  setItems((prev) => prev.filter((p) => p.id !== id));
+};
 
   const clearCart = () => setItems([]);
 

@@ -432,7 +432,21 @@ useEffect(() => {
 
   // 🛒 add to cart
   const addToCart = (product: Product) => {
+  if (product.qty <= 0) return;
 
+  addItem({
+    id: product.id,
+    name: product.name,
+    tag: product.tag,
+    price: product.price,
+    qty: product.qty,
+  });
+
+  setProducts((prev) =>
+    prev.map((p) =>
+      p.id === product.id ? { ...p, qty: 0 } : p
+    )
+  );
 };
 
 const filteredProducts =
