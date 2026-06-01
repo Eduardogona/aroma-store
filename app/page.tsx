@@ -489,7 +489,7 @@ const cartTotal = items.reduce(
           {/* GO TO CART PAGE */}
           <Link
             href="/cart"
-            className="bg-green-500 text-black px-4 py-1 rounded font-semibold"
+            className="bg-white text-black px-4 py-1 rounded font-semibold"
           >
             Pedir por WhatsApp
           </Link>
@@ -548,7 +548,8 @@ const cartTotal = items.reduce(
   {p.description}
 </p>
 
-              <p className="text-green-400">${p.price}</p>
+              <p className="text-white">${p.price}</p>
+
 
               {agotado ? (
                 <p className="text-red-500 font-bold">❌ Agotado</p>
