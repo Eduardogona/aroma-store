@@ -52,7 +52,7 @@ export default function CartPage() {
 
     // 📲 LINK WHATSAPP
     const url =
-      `https://api.whatsapp.com/send?phone=525629677336&text=${encodeURIComponent(
+      `https://api.whatsapp.com/send?phone=1010101010&text=${encodeURIComponent(
         message
       )}`;
 
